@@ -64,8 +64,8 @@ Spiele), hier nicht behandelt.
   ab, Setzliste reproduziert die bekannte 16er-Tafel, Freilose treffen automatisch die Topplätze.
 - **Historischer Cross-Check**: `theoretical_collusion_rates()` gegen die von Hand nachvollzogene
   243-Kombinationen-Enumeration (Regressionstest `test_theoretical_collusion_rates_sum_to_one_and_match_measured_values`).
-  Presets "Echte Gijón-Situation" (Saatwert 27, Gruppe 3) und "Gleichzeitigkeit wäre wirkungslos
-  gewesen" (Saatwert 506, Gruppe 2) sind als Regressionstests fixiert.
+  Presets "Echte Gijón-Situation" (Zufalls-Seed 27, Gruppe 3) und "Gleichzeitigkeit wäre wirkungslos
+  gewesen" (Zufalls-Seed 506, Gruppe 2) sind als Regressionstests fixiert.
 - **Sweeps** (`tests/test_claims.py`): simulierte Kollusionsrate liegt deutlich unter der theoretischen
   Referenz, Rang-Erhaltungsraten bei n=4 Gruppen gegen konkrete Messwerte.
 

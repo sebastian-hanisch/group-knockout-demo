@@ -98,7 +98,7 @@ with st.sidebar:
     st.header("⚙️ Einstellungen")
     n_groups = st.slider("Anzahl Gruppen", *bounds("n_groups_slider"), key="n_groups_slider",
                           help="4 Teams je Gruppe, wie bei einer Fußball-WM.")
-    seed = st.slider("Saatwert", *bounds("seed_slider"), key="seed_slider",
+    seed = st.slider("Zufalls-Seed", *bounds("seed_slider"), key="seed_slider",
                       help="Bestimmt Ratings, Gruppenauslosung und alle Spielergebnisse.")
 
 sync_query_params(n_groups, seed, st.session_state.get("focus_group_select", 0))
